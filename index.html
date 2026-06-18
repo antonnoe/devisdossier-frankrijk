@@ -1,0 +1,1298 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keuzehulp Incasso & Dossieropbouw Frankrijk</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700&family=Poppins:wght@500;600;700&display=swap');
+
+    :root {
+      --primary: #800000;
+      --primary-dark: #5f0000;
+      --primary-soft: rgba(128, 0, 0, 0.08);
+      --primary-softer: rgba(128, 0, 0, 0.045);
+      --text: #151515;
+      --muted: #5f6368;
+      --border: #dedede;
+      --bg: #ffffff;
+      --bg-soft: #faf7f7;
+      --green: #1f7a3a;
+      --green-soft: #eaf6ee;
+      --orange: #9a5b00;
+      --orange-soft: #fff4df;
+      --red: #9d1c1c;
+      --red-soft: #fdeaea;
+      --code-bg: #f7f7f7;
+      --shadow: 0 14px 36px rgba(0,0,0,0.08);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Mulish', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.8em;
+      color: var(--text);
+      background: linear-gradient(180deg, #ffffff 0%, #fbf7f7 100%);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Poppins', Arial, sans-serif;
+      line-height: 1.35em;
+      color: var(--text);
+      margin: 0 0 14px 0;
+    }
+
+    h1 {
+      font-size: clamp(1.85rem, 3.5vw, 2.55rem);
+      letter-spacing: -0.03em;
+    }
+
+    h2 {
+      font-size: clamp(1.35rem, 2.2vw, 1.85rem);
+      padding-top: 4px;
+    }
+
+    h3 {
+      font-size: 1.15rem;
+      margin-top: 18px;
+    }
+
+    p {
+      margin: 0 0 18px 0;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .page {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 60px;
+    }
+
+    .hero {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: clamp(24px, 4vw, 42px);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      right: -120px;
+      top: -130px;
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle, rgba(128,0,0,0.12), rgba(128,0,0,0));
+      pointer-events: none;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 600;
+      color: var(--primary);
+      background: var(--primary-soft);
+      border: 1px solid rgba(128,0,0,0.16);
+      border-radius: 999px;
+      padding: 5px 12px;
+      margin-bottom: 18px;
+      font-size: 0.88rem;
+    }
+
+    .hero-text {
+      max-width: 850px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid var(--primary);
+      background: var(--primary);
+      color: #ffffff;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.16s ease;
+    }
+
+    .button:hover {
+      background: var(--primary-dark);
+      border-color: var(--primary-dark);
+      text-decoration: none;
+    }
+
+    .button.secondary {
+      background: #ffffff;
+      color: var(--primary);
+    }
+
+    .button.secondary:hover {
+      background: var(--primary-soft);
+    }
+
+    .button.small {
+      min-height: 38px;
+      padding: 7px 13px;
+      font-size: 0.88rem;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 24px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    .sidebar,
+    .panel {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .sidebar {
+      padding: 18px;
+      position: sticky;
+      top: 18px;
+    }
+
+    .nav-title {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--primary);
+    }
+
+    .nav-button {
+      width: 100%;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      text-align: left;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      background: transparent;
+      padding: 12px 12px;
+      color: var(--text);
+      cursor: pointer;
+      margin-bottom: 6px;
+      font-family: 'Mulish', Arial, sans-serif;
+      font-size: 0.98rem;
+      line-height: 1.45em;
+    }
+
+    .nav-button strong {
+      display: block;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 0.96rem;
+      line-height: 1.35em;
+    }
+
+    .nav-button span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.86rem;
+      margin-top: 2px;
+    }
+
+    .nav-button.active {
+      border-color: rgba(128,0,0,0.24);
+      background: var(--primary-soft);
+    }
+
+    .panel {
+      padding: clamp(22px, 3.2vw, 34px);
+      min-height: 520px;
+    }
+
+    .module {
+      display: none;
+    }
+
+    .module.active {
+      display: block;
+    }
+
+    .notice {
+      border-left: 5px solid var(--primary);
+      background: var(--primary-softer);
+      padding: 18px 20px;
+      border-radius: 0 12px 12px 0;
+      margin: 22px 0;
+    }
+
+    .notice.warning {
+      border-left-color: var(--orange);
+      background: var(--orange-soft);
+    }
+
+    .notice.danger {
+      border-left-color: var(--red);
+      background: var(--red-soft);
+    }
+
+    .notice.success {
+      border-left-color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin: 18px 0 22px;
+    }
+
+    .field {
+      margin-bottom: 14px;
+    }
+
+    .field.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 45px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-family: 'Mulish', Arial, sans-serif;
+      font-size: 1rem;
+      color: var(--text);
+      background: #ffffff;
+    }
+
+    textarea {
+      min-height: 98px;
+      resize: vertical;
+      line-height: 1.55em;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: 3px solid rgba(128,0,0,0.15);
+      border-color: rgba(128,0,0,0.5);
+    }
+
+    .checklist {
+      margin: 22px 0;
+      display: grid;
+      gap: 10px;
+    }
+
+    .check-row {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 14px;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+      background: #ffffff;
+    }
+
+    .check-row .meta {
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 2px;
+    }
+
+    .toggle-pair {
+      display: inline-flex;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      overflow: hidden;
+      background: var(--code-bg);
+      min-width: 122px;
+    }
+
+    .toggle-pair button {
+      flex: 1;
+      border: 0;
+      background: transparent;
+      padding: 7px 10px;
+      cursor: pointer;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 0.86rem;
+      color: var(--muted);
+    }
+
+    .toggle-pair button.active.yes {
+      background: var(--green);
+      color: #ffffff;
+    }
+
+    .toggle-pair button.active.no {
+      background: var(--red);
+      color: #ffffff;
+    }
+
+    .result-card {
+      display: none;
+      border-radius: 14px;
+      padding: 18px 20px;
+      border: 1px solid var(--border);
+      margin-top: 18px;
+      background: var(--code-bg);
+    }
+
+    .result-card.visible {
+      display: block;
+    }
+
+    .score {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border-radius: 999px;
+      padding: 7px 13px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+      margin: 4px 0 12px;
+    }
+
+    .score.green {
+      color: var(--green);
+      background: var(--green-soft);
+    }
+
+    .score.orange {
+      color: var(--orange);
+      background: var(--orange-soft);
+    }
+
+    .score.red {
+      color: var(--red);
+      background: var(--red-soft);
+    }
+
+    .missing-list {
+      margin: 8px 0 0 0;
+      padding-left: 20px;
+    }
+
+    .template {
+      position: relative;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      background: var(--code-bg);
+      margin: 18px 0;
+      overflow: hidden;
+    }
+
+    .template-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      border-bottom: 1px solid var(--border);
+      background: #ffffff;
+    }
+
+    .template-title {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .template-body {
+      white-space: pre-wrap;
+      padding: 16px;
+      font-family: 'Mulish', Arial, sans-serif;
+      line-height: 1.7em;
+    }
+
+    .two-columns {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .route-box {
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px;
+      background: #ffffff;
+      margin-top: 18px;
+    }
+
+    .route-box h3 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      border-radius: 999px;
+      padding: 3px 10px;
+      font-family: 'Poppins', Arial, sans-serif;
+      font-weight: 600;
+      font-size: 0.78rem;
+      background: var(--primary-soft);
+      color: var(--primary);
+      margin: 2px 5px 2px 0;
+    }
+
+    .sources {
+      margin-top: 26px;
+      padding-top: 22px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .sources ul {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    .footer-note {
+      margin-top: 26px;
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar {
+        position: static;
+      }
+
+      .form-grid,
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .check-row {
+        grid-template-columns: 1fr;
+      }
+
+      .toggle-pair {
+        width: 100%;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .sidebar,
+      .hero-actions,
+      .button,
+      .template-head .button {
+        display: none !important;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      .hero,
+      .panel {
+        box-shadow: none;
+        border: 1px solid #cccccc;
+      }
+
+      .module {
+        display: block;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="hero-text">
+        <div class="eyebrow">Voor Nederlandse ondernemers in Frankrijk</div>
+        <h1>Keuzehulp Incasso & Dossieropbouw Frankrijk</h1>
+        <p>
+          Controleer uw basisdocumenten, bouw een sterker incassodossier op en genereer tweetalige correspondentie
+          voor betalingsherinnering en ingebrekestelling. Deze tool is bedoeld als praktische hulp, niet als vervanging
+          van advies door een Franse jurist, advocaat of commissaire de justice.
+        </p>
+        <div class="hero-actions">
+          <button class="button" onclick="showModule('invoice')">Start met factuurcheck</button>
+          <button class="button secondary" onclick="showModule('collection')">Ga naar incassoroute</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="sidebar">
+        <div class="nav-title">Modules</div>
+        <button class="nav-button active" id="nav-invoice" onclick="showModule('invoice')">
+          <div>
+            <strong>Factuurcheck</strong>
+            <span>Minimale vermeldingen en B2B-risico's.</span>
+          </div>
+        </button>
+        <button class="nav-button" id="nav-quote" onclick="showModule('quote')">
+          <div>
+            <strong>Offertecheck</strong>
+            <span>Devis, akkoord en bewijswaarde.</span>
+          </div>
+        </button>
+        <button class="nav-button" id="nav-delivery" onclick="showModule('delivery')">
+          <div>
+            <strong>Oplevering</strong>
+            <span>Procès-verbal, réserves en hersteltermijn.</span>
+          </div>
+        </button>
+        <button class="nav-button" id="nav-collection" onclick="showModule('collection')">
+          <div>
+            <strong>Incassoroute</strong>
+            <span>Relance, mise en demeure en procedurekeuze.</span>
+          </div>
+        </button>
+        <button class="nav-button" id="nav-generator" onclick="showModule('generator')">
+          <div>
+            <strong>Tweetalige generator</strong>
+            <span>NL/FR relance en mise en demeure.</span>
+          </div>
+        </button>
+        <button class="nav-button" id="nav-sources" onclick="showModule('sources')">
+          <div>
+            <strong>Bronnen & disclaimer</strong>
+            <span>Controlebasis en beperkingen.</span>
+          </div>
+        </button>
+      </aside>
+
+      <section class="panel">
+        <section class="module active" id="module-invoice">
+          <h2>Factuurcheck / Facture</h2>
+          <p>
+            Een factuur is niet alleen een boekhoudkundig document. Bij wanbetaling is zij een essentieel bewijsstuk.
+            Controleer of uw factuur minimaal deze punten bevat.
+          </p>
+
+          <div class="notice">
+            <strong>Tweetalig werken.</strong> Gebruik bij voorkeur Nederlands én Frans. Nederlands voor de relatie met
+            de Nederlandse opdrachtgever; Frans voor boekhouding, bewijsdossier, commissaire de justice en eventuele
+            Franse procedure.
+          </div>
+
+          <div class="checklist" id="invoice-checklist"></div>
+          <button class="button" onclick="evaluateChecklist('invoice')">Beoordeel factuur</button>
+          <div class="result-card" id="invoice-result"></div>
+        </section>
+
+        <section class="module" id="module-quote">
+          <h2>Offertecheck / Devis</h2>
+          <p>
+            Een ondertekende offerte is vaak het sterkste uitgangspunt bij incasso. Zonder duidelijk akkoord ontstaat
+            sneller discussie over prijs, omvang, meerwerk en planning.
+          </p>
+
+          <div class="checklist" id="quote-checklist"></div>
+          <button class="button" onclick="evaluateChecklist('quote')">Beoordeel offerte</button>
+          <div class="result-card" id="quote-result"></div>
+        </section>
+
+        <section class="module" id="module-delivery">
+          <h2>Opleveringscheck / Réception des travaux</h2>
+          <p>
+            Vooral bij werkzaamheden aan woningen, renovatie, onderhoud en installaties is het verstandig om de
+            oplevering schriftelijk vast te leggen. Dat voorkomt dat discussie over gebreken later automatisch
+            discussie over betaling wordt.
+          </p>
+
+          <div class="checklist" id="delivery-checklist"></div>
+          <button class="button" onclick="evaluateChecklist('delivery')">Beoordeel opleveringsdossier</button>
+          <div class="result-card" id="delivery-result"></div>
+        </section>
+
+        <section class="module" id="module-collection">
+          <h2>Incassoroute Frankrijk</h2>
+          <p>
+            Deze module bepaalt niet definitief wat juridisch mogelijk is, maar geeft een veilige praktische route op
+            basis van de gebruikelijke Franse stappen: relance, mise en demeure, daarna procedurekeuze.
+          </p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="debtorType">Type klant / débiteur</label>
+              <select id="debtorType">
+                <option value="consumer">Particulier / consument</option>
+                <option value="professional">Professional / bedrijf</option>
+                <option value="merchant">Commerçant tegen commerçant</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="claimAmount">Openstaande hoofdsom</label>
+              <select id="claimAmount">
+                <option value="under5000">Tot en met € 5.000</option>
+                <option value="over5000">Meer dan € 5.000</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="disputeStatus">Wordt de vordering inhoudelijk betwist?</label>
+              <select id="disputeStatus">
+                <option value="no">Nee / niet bekend</option>
+                <option value="yes">Ja, er is inhoudelijke betwisting</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="noticeStatus">Status mise en demeure</label>
+              <select id="noticeStatus">
+                <option value="none">Nog niet verstuurd</option>
+                <option value="waiting">Verstuurd, termijn loopt nog</option>
+                <option value="expired">Verstuurd, termijn verstreken</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="checklist" id="collection-checklist"></div>
+          <button class="button" onclick="evaluateCollection()">Beoordeel incassoroute</button>
+          <div class="result-card" id="collection-result"></div>
+
+          <div class="notice warning">
+            <strong>Commerciële uitingen.</strong> Zorg dat website, social media, advertenties, brochures,
+            verkoopmails en mondelinge toezeggingen inhoudelijk aansluiten op offerte, factuur, CGV en
+            opleveringsverslag. Vermijd absolute beloften zoals “gegarandeerd resultaat”, “binnen 48 uur opgelost”,
+            “alles inbegrepen”, “geen verborgen kosten” of “subsidie gegarandeerd”, tenzij u die aantoonbaar kunt
+            waarmaken en dezelfde beperking ook in uw contractdocumenten staat. Commerciële communicatie kan later
+            relevant worden bij discussie over prestatie, prijs of betaling.
+          </div>
+        </section>
+
+        <section class="module" id="module-generator">
+          <h2>Tweetalige correspondentie-generator</h2>
+          <p>
+            Vul de gegevens in en genereer een Nederlandse en Franse tekst. De Franse versie gebruikt vaste termen
+            voor een Frans dossier. Verstuur een formele ingebrekestelling bij voorkeur per LRAR of via een aantoonbare
+            juridische route.
+          </p>
+
+          <div class="form-grid">
+            <div class="field">
+              <label for="docType">Documenttype</label>
+              <select id="docType" onchange="generateLetters()">
+                <option value="relance">Vriendelijke betalingsherinnering / Relance amiable</option>
+                <option value="mise">Formele ingebrekestelling / Mise en demeure</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="genDebtorType">Klanttype</label>
+              <select id="genDebtorType" onchange="generateLetters()">
+                <option value="consumer">Particulier</option>
+                <option value="professional">Professional / bedrijf</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="customerName">Naam klant</label>
+              <input id="customerName" value="[Naam klant]" oninput="generateLetters()" />
+            </div>
+            <div class="field">
+              <label for="invoiceNumber">Factuurnummer</label>
+              <input id="invoiceNumber" value="[Factuurnummer]" oninput="generateLetters()" />
+            </div>
+            <div class="field">
+              <label for="invoiceDate">Factuurdatum</label>
+              <input id="invoiceDate" value="[Factuurdatum]" oninput="generateLetters()" />
+            </div>
+            <div class="field">
+              <label for="dueDate">Vervaldatum</label>
+              <input id="dueDate" value="[Vervaldatum]" oninput="generateLetters()" />
+            </div>
+            <div class="field">
+              <label for="amount">Bedrag</label>
+              <input id="amount" value="[Bedrag] €" oninput="generateLetters()" />
+            </div>
+            <div class="field">
+              <label for="termDays">Nieuwe betalingstermijn</label>
+              <input id="termDays" value="8 dagen" oninput="generateLetters()" />
+            </div>
+            <div class="field full">
+              <label for="extraNote">Korte toelichting / projectomschrijving</label>
+              <textarea id="extraNote" oninput="generateLetters()">[Korte omschrijving van de prestatie of opdracht]</textarea>
+            </div>
+          </div>
+
+          <button class="button" onclick="generateLetters()">Genereer teksten</button>
+
+          <div class="two-columns">
+            <div class="template">
+              <div class="template-head">
+                <div class="template-title">Nederlands</div>
+                <button class="button small secondary" onclick="copyTemplate('nl-output')">Kopieer</button>
+              </div>
+              <div class="template-body" id="nl-output"></div>
+            </div>
+            <div class="template">
+              <div class="template-head">
+                <div class="template-title">Frans</div>
+                <button class="button small secondary" onclick="copyTemplate('fr-output')">Kopieer</button>
+              </div>
+              <div class="template-body" id="fr-output"></div>
+            </div>
+          </div>
+
+          <div class="notice danger">
+            <strong>Bij betwisting:</strong> gebruik deze teksten niet als automatische escalatie wanneer de klant
+            inhoudelijk betwist dat de prestatie is geleverd, correct is uitgevoerd of contractueel verschuldigd is.
+            Dan is eerst dossieranalyse nodig.
+          </div>
+        </section>
+
+        <section class="module" id="module-sources">
+          <h2>Bronnen & beperkingen</h2>
+          <p>
+            Deze tool is een praktische keuzehulp. Hij geeft geen individueel juridisch advies en bepaalt niet
+            bindend welke rechter of procedure bevoegd is. Controleer bij hoge bedragen, betwiste vorderingen,
+            bouwgeschillen, consumentenkwesties of grensoverschrijdende dossiers altijd de actuele Franse regels.
+          </p>
+
+          <div class="sources">
+            <strong>Bronregister — laatst gecontroleerd: 18 juni 2026</strong>
+            <ul>
+              <li><a href="https://entreprendre.service-public.fr/vosdroits/F31808" target="_blank" rel="noopener">Service-Public Entreprendre — Mentions obligatoires sur une facture</a></li>
+              <li><a href="https://entreprendre.service-public.fr/vosdroits/F23211" target="_blank" rel="noopener">Service-Public Entreprendre — Délais de paiement entre professionnels et pénalités de retard</a></li>
+              <li><a href="https://entreprendre.service-public.fr/vosdroits/F31144" target="_blank" rel="noopener">Service-Public Entreprendre — Devis obligatoire : activités concernées</a></li>
+              <li><a href="https://entreprendre.service-public.fr/vosdroits/F38586" target="_blank" rel="noopener">Service-Public Entreprendre — Recouvrement amiable : relance et mise en demeure</a></li>
+              <li><a href="https://entreprendre.service-public.fr/vosdroits/F38156" target="_blank" rel="noopener">Service-Public Entreprendre — Recouvrement judiciaire : injonction de payer</a></li>
+              <li><a href="https://entreprendre.service-public.fr/vosdroits/F38307" target="_blank" rel="noopener">Service-Public Entreprendre — Procédure simplifiée de recouvrement de petites créances</a></li>
+              <li><a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000038310700" target="_blank" rel="noopener">Légifrance — Code des procédures civiles d'exécution, art. L125-1</a></li>
+              <li><a href="https://www.economie.gouv.fr/dgccrf/les-fiches-pratiques/pratiques-commerciales-trompeuses-les-cles-pour-les-reconnaitre-et-sen-premunir" target="_blank" rel="noopener">DGCCRF — Pratiques commerciales trompeuses</a></li>
+              <li><a href="https://www.service-public.fr/particuliers/vosdroits/F2958" target="_blank" rel="noopener">Service-Public — Garanties après la réception des travaux</a></li>
+            </ul>
+          </div>
+
+          <p class="footer-note">
+            Aan deze tool kunnen geen rechten worden ontleend. Gebruik hem als interne controlelijst en praktische
+            tekstgenerator. Bij twijfel: raadpleeg een Franse advocaat, commissaire de justice, expert-comptable of
+            bevoegde beroepsorganisatie.
+          </p>
+        </section>
+      </section>
+    </section>
+  </main>
+
+  <script>
+    const checklistDefinitions = {
+      invoice: [
+        {
+          id: 'identitySeller',
+          label: 'Identiteit ondernemer vermeld',
+          meta: 'Naam, adres, rechtsvorm indien van toepassing, SIREN/SIRET en relevante registratiegegevens.'
+        },
+        {
+          id: 'identityClient',
+          label: 'Identiteit klant vermeld',
+          meta: 'Naam en adres van de klant; bij B2B bij voorkeur ook ondernemingsgegevens.'
+        },
+        {
+          id: 'numberDate',
+          label: 'Uniek factuurnummer en factuurdatum aanwezig',
+          meta: 'Gebruik een doorlopende, ondubbelzinnige nummering.'
+        },
+        {
+          id: 'serviceDate',
+          label: 'Datum levering of uitvoering vermeld',
+          meta: 'Nodig om prestatie, vervaldatum en opeisbaarheid te onderbouwen.'
+        },
+        {
+          id: 'description',
+          label: 'Prestatie duidelijk omschreven',
+          meta: 'Vermijd alleen “werkzaamheden volgens afspraak”; omschrijf wat geleverd of uitgevoerd is.'
+        },
+        {
+          id: 'priceVat',
+          label: 'Prijs, btw of btw-vrijstelling correct vermeld',
+          meta: 'HT/TTC, btw-tarief of passende vermelding zoals TVA non applicable, art. 293 B CGI.'
+        },
+        {
+          id: 'paymentTerms',
+          label: 'Betalingstermijn en betaalgegevens vermeld',
+          meta: 'Vervaldatum, IBAN en eventuele voorwaarden voor vooruitbetaling of deelbetaling.'
+        },
+        {
+          id: 'latePenalties',
+          label: 'B2B: vertragingsrente en €40 incassovergoeding vermeld',
+          meta: 'Voor professionele klanten hoort dit ook in de CGV te staan.'
+        },
+        {
+          id: 'bilingual',
+          label: 'Nederlandse én Franse versie beschikbaar',
+          meta: 'Aanbevolen voor Franse boekhouding, dossieropbouw en eventuele procedure.'
+        }
+      ],
+      quote: [
+        {
+          id: 'quoteIdentity',
+          label: 'Partijen volledig geïdentificeerd',
+          meta: 'Ondernemer en klant met adres en relevante ondernemingsgegevens.'
+        },
+        {
+          id: 'quoteDateValidity',
+          label: 'Datum en geldigheidsduur offerte vermeld',
+          meta: 'Voorkomt discussie over oude prijzen of verlopen aanbiedingen.'
+        },
+        {
+          id: 'quoteScope',
+          label: 'Werkzaamheden of levering concreet omschreven',
+          meta: 'Vermeld omvang, materialen, aantallen, locatie en uitsluitingen.'
+        },
+        {
+          id: 'quotePrice',
+          label: 'Prijsopbouw duidelijk',
+          meta: 'Arbeid, materiaal, verplaatsing, HT/TTC, btw en eventuele stelposten.'
+        },
+        {
+          id: 'quoteTiming',
+          label: 'Planning of uitvoeringsvenster vermeld',
+          meta: 'Geen te absolute belofte doen als planning afhankelijk is van derden, weer of levering.'
+        },
+        {
+          id: 'quotePayment',
+          label: 'Betalingsschema opgenomen',
+          meta: 'Voorschot, termijnen, saldo bij oplevering en gevolgen bij te late betaling.'
+        },
+        {
+          id: 'quoteCgv',
+          label: 'CGV of kernvoorwaarden gekoppeld',
+          meta: 'Voor consumenten extra letten op precontractuele informatie en herroepingsregels waar relevant.'
+        },
+        {
+          id: 'quoteSignature',
+          label: 'Akkoord klant aantoonbaar',
+          meta: 'Handtekening met “bon pour accord”, e-mailakkoord of digitale acceptatie.'
+        },
+        {
+          id: 'quoteBilingual',
+          label: 'Nederlandse én Franse versie beschikbaar',
+          meta: 'Aanbevolen wanneer de ondernemer in Frankrijk gevestigd is.'
+        }
+      ],
+      delivery: [
+        {
+          id: 'deliveryDate',
+          label: 'Datum, plaats en project vermeld',
+          meta: 'Leg vast waar en wanneer de oplevering heeft plaatsgevonden.'
+        },
+        {
+          id: 'deliveryParties',
+          label: 'Aanwezige partijen vermeld',
+          meta: 'Naam ondernemer, klant en eventueel vertegenwoordiger of derde.'
+        },
+        {
+          id: 'deliveryScope',
+          label: 'Uitgevoerde prestatie concreet omschreven',
+          meta: 'Verwijs naar offerte, factuurnummer, opdracht of werkbon.'
+        },
+        {
+          id: 'deliveryStatus',
+          label: 'Oplevering zonder of met voorbehoud gekozen',
+          meta: 'Gebruik duidelijk: réception sans réserves of réception avec réserves.'
+        },
+        {
+          id: 'deliveryReserves',
+          label: 'Eventuele réserves precies genoteerd',
+          meta: 'Niet “niet tevreden”, maar concrete punten, locatie, ernst en gewenste correctie.'
+        },
+        {
+          id: 'deliveryDeadline',
+          label: 'Hersteltermijn of vervolgafspraak vermeld',
+          meta: 'Alleen nodig wanneer er réserves of restpunten zijn.'
+        },
+        {
+          id: 'deliveryPhotos',
+          label: 'Foto’s of bijlagen gekoppeld',
+          meta: 'Nuttig bij discussie over staat van uitvoering of latere schade.'
+        },
+        {
+          id: 'deliverySignature',
+          label: 'Handtekening of schriftelijk akkoord klant aanwezig',
+          meta: 'Zonder akkoord is het bewijs van oplevering zwakker.'
+        }
+      ],
+      collection: [
+        {
+          id: 'signedQuote',
+          label: 'Getekende offerte, opdrachtbevestiging of aantoonbaar akkoord',
+          meta: 'Zonder opdrachtbewijs wordt incasso veel kwetsbaarder.'
+        },
+        {
+          id: 'validInvoice',
+          label: 'Correcte factuur beschikbaar',
+          meta: 'Factuurnummer, datum, bedrag, prestatie, vervaldatum en klantgegevens.'
+        },
+        {
+          id: 'proofDelivery',
+          label: 'Bewijs van uitvoering, levering of oplevering',
+          meta: 'Werkbon, leveringsbon, opleveringsverslag, foto’s of e-mailbevestiging.'
+        },
+        {
+          id: 'dueDebt',
+          label: 'Vordering is opeisbaar',
+          meta: 'De betalingstermijn is verstreken en het bedrag is bepaalbaar.'
+        },
+        {
+          id: 'priorReminder',
+          label: 'Er is minimaal één gewone herinnering of duidelijke betalingsvraag geweest',
+          meta: 'Niet altijd juridisch verplicht, wel praktisch verstandig.'
+        },
+        {
+          id: 'formalNoticeProof',
+          label: 'Mise en demeure aantoonbaar verstuurd',
+          meta: 'Bij voorkeur LRAR of andere route met sterk bewijs van verzending en inhoud.'
+        },
+        {
+          id: 'noSeriousDispute',
+          label: 'Geen ernstige inhoudelijke betwisting',
+          meta: 'Bij inhoudelijke betwisting is een standaard incassoroute minder geschikt.'
+        }
+      ]
+    };
+
+    const checklistState = {
+      invoice: {},
+      quote: {},
+      delivery: {},
+      collection: {}
+    };
+
+    function initialise() {
+      Object.keys(checklistDefinitions).forEach(type => {
+        const target = document.getElementById(type + '-checklist');
+        if (!target) return;
+
+        target.innerHTML = checklistDefinitions[type].map(item => `
+          <div class="check-row">
+            <div>
+              <strong>${item.label}</strong>
+              <div class="meta">${item.meta}</div>
+            </div>
+            <div class="toggle-pair" aria-label="${item.label}">
+              <button type="button" onclick="setChecklist('${type}', '${item.id}', true, this)">Ja</button>
+              <button type="button" onclick="setChecklist('${type}', '${item.id}', false, this)">Nee</button>
+            </div>
+          </div>
+        `).join('');
+
+        checklistDefinitions[type].forEach(item => {
+          checklistState[type][item.id] = null;
+        });
+      });
+
+      generateLetters();
+    }
+
+    function showModule(moduleName) {
+      document.querySelectorAll('.module').forEach(module => module.classList.remove('active'));
+      document.querySelectorAll('.nav-button').forEach(button => button.classList.remove('active'));
+
+      document.getElementById('module-' + moduleName).classList.add('active');
+      const nav = document.getElementById('nav-' + moduleName);
+      if (nav) nav.classList.add('active');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function setChecklist(type, id, value, clickedButton) {
+      checklistState[type][id] = value;
+
+      const pair = clickedButton.parentElement;
+      pair.querySelectorAll('button').forEach(button => {
+        button.classList.remove('active', 'yes', 'no');
+      });
+
+      clickedButton.classList.add('active', value ? 'yes' : 'no');
+    }
+
+    function evaluateChecklist(type) {
+      const items = checklistDefinitions[type];
+      const state = checklistState[type];
+
+      const missing = items.filter(item => state[item.id] !== true);
+      const answered = items.filter(item => state[item.id] !== null);
+
+      const result = document.getElementById(type + '-result');
+      result.classList.add('visible');
+
+      if (answered.length < items.length) {
+        result.innerHTML = `
+          <span class="score orange">Onvolledig ingevuld</span>
+          <p>Beantwoord eerst alle punten. Niet-beantwoorde punten worden voorlopig als risico behandeld.</p>
+        `;
+        return;
+      }
+
+      const ratio = (items.length - missing.length) / items.length;
+      let statusClass = 'green';
+      let statusText = 'Groen — dossierbasis lijkt bruikbaar';
+      let advice = 'Bewaar dit document samen met offerte, e-mails, bewijs van uitvoering en betalingshistorie.';
+
+      if (ratio < 0.78 && ratio >= 0.55) {
+        statusClass = 'orange';
+        statusText = 'Oranje — bruikbaar maar kwetsbaar';
+        advice = 'Vul de ontbrekende punten aan vóór u formeel escaleert. Bij een procedure kunnen deze lacunes discussie veroorzaken.';
+      }
+
+      if (ratio < 0.55) {
+        statusClass = 'red';
+        statusText = 'Rood — juridisch zwakke dossierbasis';
+        advice = 'Escaleer niet automatisch. Herstel eerst het dossier of vraag juridisch advies, zeker bij betwisting door de klant.';
+      }
+
+      result.innerHTML = `
+        <span class="score ${statusClass}">${statusText}</span>
+        <p>${advice}</p>
+        ${missing.length ? `
+          <strong>Ontbrekende of zwakke punten:</strong>
+          <ul class="missing-list">
+            ${missing.map(item => `<li>${item.label}</li>`).join('')}
+          </ul>
+        ` : '<p><strong>Geen ontbrekende checklistpunten.</strong></p>'}
+      `;
+    }
+
+    function evaluateCollection() {
+      evaluateChecklist('collection');
+
+      const debtorType = document.getElementById('debtorType').value;
+      const claimAmount = document.getElementById('claimAmount').value;
+      const disputeStatus = document.getElementById('disputeStatus').value;
+      const noticeStatus = document.getElementById('noticeStatus').value;
+      const result = document.getElementById('collection-result');
+
+      let routeHtml = '';
+
+      if (disputeStatus === 'yes') {
+        routeHtml = `
+          <div class="route-box">
+            <h3>Route: geen automatische incasso-escalatie</h3>
+            <p>
+              De vordering wordt inhoudelijk betwist. Gebruik geen standaardroute alsof de vordering onbetwist is.
+              Verzamel eerst contract, offerte, correspondentie, bewijs van uitvoering, oplevering en eventuele foto’s.
+            </p>
+            <span class="tag">Betwiste vordering</span>
+            <span class="tag">Dossieranalyse nodig</span>
+          </div>
+        `;
+      } else if (noticeStatus === 'none') {
+        routeHtml = `
+          <div class="route-box">
+            <h3>Volgende stap: formele mise en demeure</h3>
+            <p>
+              Stuur na een gewone herinnering een duidelijke ingebrekestelling. Gebruik bij voorkeur LRAR of een andere
+              aantoonbare route waarbij inhoud, verzending en datum bewijsbaar zijn.
+            </p>
+            <button class="button small" onclick="showModule('generator'); document.getElementById('docType').value='mise'; generateLetters();">Maak mise en demeure</button>
+          </div>
+        `;
+      } else if (noticeStatus === 'waiting') {
+        routeHtml = `
+          <div class="route-box">
+            <h3>Volgende stap: termijn afwachten</h3>
+            <p>
+              Wacht de gestelde termijn af. Escaleer pas wanneer de termijn is verstreken en er geen betaling of
+              inhoudelijke reactie is gekomen.
+            </p>
+          </div>
+        `;
+      } else {
+        if (claimAmount === 'under5000' && debtorType !== 'merchant') {
+          routeHtml = `
+            <div class="route-box">
+              <h3>Mogelijke route: procédure simplifiée petites créances</h3>
+              <p>
+                Bij een contractuele, niet ernstig betwiste vordering tot en met € 5.000 kan de vereenvoudigde procedure
+                via een commissaire de justice relevant zijn. Let op: deze route is uitgesloten voor vorderingen die
+                tussen commerçants zijn gefactureerd.
+              </p>
+              <span class="tag">≤ €5.000</span>
+              <span class="tag">Commissaire de justice</span>
+            </div>
+          `;
+        } else if (claimAmount === 'under5000' && debtorType === 'merchant') {
+          routeHtml = `
+            <div class="route-box">
+              <h3>Let op: vordering tussen commerçants</h3>
+              <p>
+                De gewone kleine-vorderingenprocedure is uitgesloten voor créances ayant fait l'objet d'une facturation
+                entre commerçants. Beoordeel of een commerciële incassoprocedure of injonction de payer passender is.
+              </p>
+              <span class="tag">Commerçants</span>
+              <span class="tag">Extra controle nodig</span>
+            </div>
+          `;
+        } else {
+          routeHtml = `
+            <div class="route-box">
+              <h3>Mogelijke route: injonction de payer of assignation</h3>
+              <p>
+                Bij hogere bedragen ligt een verzoek tot injonction de payer of een gewone procedure meer voor de hand.
+                De keuze hangt af van bewijspositie, betwisting, aard van de klant en bevoegde rechtbank.
+              </p>
+              <span class="tag">&gt; €5.000</span>
+              <span class="tag">Tribunal judiciaire / tribunal de commerce</span>
+            </div>
+          `;
+        }
+      }
+
+      result.innerHTML += routeHtml;
+    }
+
+    function generateLetters() {
+      const docType = document.getElementById('docType').value;
+      const debtorType = document.getElementById('genDebtorType').value;
+      const customerName = cleanValue('customerName');
+      const invoiceNumber = cleanValue('invoiceNumber');
+      const invoiceDate = cleanValue('invoiceDate');
+      const dueDate = cleanValue('dueDate');
+      const amount = cleanValue('amount');
+      const termDays = cleanValue('termDays');
+      const extraNote = cleanValue('extraNote');
+
+      let nl = '';
+      let fr = '';
+
+      if (docType === 'relance') {
+        nl = `Onderwerp: betalingsherinnering factuur ${invoiceNumber}
+
+Geachte heer/mevrouw,
+
+Tenzij onze administratie zich vergist, hebben wij nog geen betaling ontvangen van factuur ${invoiceNumber} d.d. ${invoiceDate}, voor een bedrag van ${amount}. De vervaldatum was ${dueDate}.
+
+De factuur heeft betrekking op:
+${extraNote}
+
+Wij verzoeken u vriendelijk het openstaande bedrag alsnog zo spoedig mogelijk te voldoen.
+
+Wanneer uw betaling inmiddels is uitgevoerd, kunt u deze herinnering als niet verzonden beschouwen.
+
+Met vriendelijke groet,`;
+
+        fr = `Objet : Relance amiable - facture n° ${invoiceNumber}
+
+Madame, Monsieur,
+
+Sauf erreur ou omission de notre part, nous n'avons pas reçu le paiement de la facture n° ${invoiceNumber} datée du ${invoiceDate}, d'un montant de ${amount}, arrivée à échéance le ${dueDate}.
+
+Cette facture concerne :
+${extraNote}
+
+Nous vous remercions de bien vouloir procéder au règlement dans les meilleurs délais.
+
+Si votre paiement a été effectué entre-temps, nous vous prions de ne pas tenir compte de la présente relance.
+
+Veuillez agréer, Madame, Monsieur, l'expression de nos salutations distinguées.`;
+      }
+
+      if (docType === 'mise') {
+        const b2bNl = debtorType === 'professional'
+          ? `\nVoor zover van toepassing bij een professionele klant behouden wij ons tevens het recht voor om wettelijke/contractuele vertragingsrente en de forfaitaire vergoeding voor invorderingskosten van €40 te vorderen, mits deze correct op factuur en/of voorwaarden zijn vermeld.\n`
+          : '';
+
+        const b2bFr = debtorType === 'professional'
+          ? `\nLe cas échéant, pour un client professionnel, nous nous réservons également le droit de réclamer les pénalités de retard applicables ainsi que l'indemnité forfaitaire pour frais de recouvrement de 40 €, sous réserve que ces mentions figurent correctement sur la facture et/ou dans les conditions applicables.\n`
+          : '';
+
+        nl = `Onderwerp: ingebrekestelling tot betaling - factuur ${invoiceNumber}
+
+Geachte heer/mevrouw,
+
+Ondanks eerdere herinnering(en) constateren wij dat factuur ${invoiceNumber} d.d. ${invoiceDate}, voor een bedrag van ${amount}, tot op heden onbetaald is gebleven. De vervaldatum was ${dueDate}.
+
+De factuur heeft betrekking op:
+${extraNote}
+${b2bNl}
+Hierbij stellen wij u formeel in gebreke en verzoeken wij u het volledige openstaande bedrag te voldoen binnen ${termDays} na ontvangst van deze brief.
+
+Bij uitblijven van volledige betaling binnen deze termijn behouden wij ons het recht voor om zonder nadere aankondiging verdere invorderingsmaatregelen te nemen, waaronder inschakeling van een commissaire de justice of de bevoegde rechter.
+
+Met vriendelijke groet,`;
+
+        fr = `Objet : MISE EN DEMEURE DE PAYER - facture n° ${invoiceNumber}
+
+Madame, Monsieur,
+
+Malgré notre/nos précédente(s) relance(s), nous constatons que la facture n° ${invoiceNumber} datée du ${invoiceDate}, d'un montant de ${amount}, demeure à ce jour impayée. Son échéance était fixée au ${dueDate}.
+
+Cette facture concerne :
+${extraNote}
+${b2bFr}
+Par la présente, nous vous mettons formellement en demeure de régler l'intégralité de la somme due dans un délai de ${termDays} à compter de la réception de la présente.
+
+À défaut de paiement intégral dans ce délai, nous nous réservons le droit d'engager, sans autre avis, toute mesure de recouvrement utile, notamment par l'intermédiaire d'un commissaire de justice ou devant la juridiction compétente.
+
+Veuillez agréer, Madame, Monsieur, l'expression de nos salutations distinguées.`;
+      }
+
+      document.getElementById('nl-output').innerText = nl;
+      document.getElementById('fr-output').innerText = fr;
+    }
+
+    function cleanValue(id) {
+      return document.getElementById(id).value.trim() || '[' + id + ']';
+    }
+
+    function copyTemplate(id) {
+      const text = document.getElementById(id).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert('Tekst gekopieerd.');
+      }).catch(() => {
+        alert('Kopiëren is niet gelukt. Selecteer de tekst handmatig.');
+      });
+    }
+
+    document.addEventListener('DOMContentLoaded', initialise);
+  </script>
+</body>
+</html>
